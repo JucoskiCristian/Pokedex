@@ -1,0 +1,233 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #dfe0e0;
+    margin: 0;
+    height: auto;
+}
+
+.content {
+    background-image: url(https://pokemondeal.com/wp-content/uploads/2020/12/Pokeball-wallpaper.jpg);
+    background-attachment: fixed;
+    padding: 1rem;
+    height: auto;
+    margin: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.pokedexLogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.pokemons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    grid-template-columns: 1fr;
+}
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 2rem 1rem;
+    border-radius: 1rem;
+    height: 12.5rem;
+}
+
+.pokemon .namenumber .namediv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.namediv img {
+    width: 1rem;
+    height: 1rem;
+    margin-right: .25rem;
+}
+
+.pokemon .namenumber {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -.5rem;
+}
+
+.pokemon .namenumber .namediv span {
+    color: black;
+    margin: .25rem 0rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 4px #FFF;
+}
+
+.pokemon .namenumber .number {
+    color: black;
+    opacity: .5;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    display: flex;
+    color: black;
+    padding: .35rem .5rem;
+    margin: .5rem 0rem;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    filter: drop-shadow(0.3rem 0.3rem 0.3rem rgba(0, 0, 0, 0.5)) brightness(1.06);
+}
+
+.pokemon .detail .types .type img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.pokemon .detail .types .type span{
+    color: #000;
+    padding: .35rem .5rem;
+    font-size: .78rem;
+    font-weight: 800;
+    text-shadow: 1px 1px 5px #FFF;
+}
+
+
+.pokemon .detail img {
+    max-width: 100%;
+    height: 4rem;
+    align-self: center;
+    filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+@media screen and (min-width: 380px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .pokedexLogo .pokedexNameLogo {
+        width: 375px;
+        height: 155px;
+    }
+
+    .pokedexLogo .pokedeximg {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+.normal {
+    background-color: #a6a877;
+}
+
+.grass {
+    background-color: #77c850;
+}
+
+.fire {
+    background-color: #ee7f30;
+}
+
+.water {
+    background-color: #678fee;
+}
+
+.electric {
+    background-color: #f7cf2e;
+}
+
+.ice {
+    background-color: #98d5d7;
+}
+
+.ground {
+    background-color: #dfbf69;
+}
+
+.flying {
+    background-color: #a98ff0;
+}
+
+.poison {
+    background-color: #a040a0;
+}
+
+.fighting {
+    background-color: #bf3029;
+}
+
+.psychic {
+    background-color: #f65687;
+}
+
+.dark {
+    background-color: #725847;
+}
+
+.rock {
+    background-color: #b8a137;
+}
+
+.bug {
+    background-color: #a8b720;
+}
+
+.ghost {
+    background-color: #6e5896;
+}
+
+.steel {
+    background-color: #b9b7cf;
+}
+
+.dragon {
+    background-color: #6f38f6;
+}
+
+.fairy {
+    background-color: #f9aec7;
+}
