@@ -34,7 +34,6 @@ export const Pokedex = () => {
       .then((pokemonsDetails) => setPokemons(pokemonsDetails))
       .catch((error) => console.error(error))
 
-      console.log('effect axios ')
   },[])
 
   useEffect(() => {
@@ -62,13 +61,13 @@ export const Pokedex = () => {
       <div style={styleSpinner} className='spinner' />
 
       <ol id='pokemonol' style={styleOl} className='pokemons'>
-        {pokemons.map((pokemon) => {
+        {pokemons.map(pokemon => {
           return (
             <Link to={`/pokemon/${pokemon.id}`} className='card'>
               <li key={pokemon.id} className={[pokemon.types[0].type.name, 'pokemon'].join(' ')}>
                 <div className='namenumber'>
                   <div className='namediv'>
-                    <img src="src\img\TypeIcons\pokebola.png" alt="" />
+                    <img src="src\img\TypeIcons\pokebola.png" alt="pokebola" />
                     <span>{pokemon.name}</span>
                   </div>
                   <span className='number'>#{pokemon.id}</span>
@@ -78,7 +77,7 @@ export const Pokedex = () => {
                     {pokemon.types.map((typeSlot, key) => {
                       return (
                         <li key={key} className={[typeSlot.type.name, 'type'].join(' ')}>
-                          <img src={'src/img/TypeIcons/Pokemon_Type_Icon_' + typeSlot.type.name + '.png'} alt={typeSlot.type.name} />
+                          <img src={'../src/img/TypeIcons/Pokemon_Type_Icon_' + typeSlot.type.name + '.png'} alt={typeSlot.type.name} />
                           <span>{typeSlot.type.name}</span>
                         </li>
                       )
